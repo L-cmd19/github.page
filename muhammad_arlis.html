@@ -96,7 +96,8 @@
     <img src="huffman_coding.png" alt="Huffman Coding">
     <div class="card-content">
       <h2>HUFFMAN CODING</h2>
-      <p>Algoritma kompresi data yang menggunakan pohon biner untuk memberikan kode pendek pada karakter yang sering muncul dan kode panjang pada karakter yang jarang.</p>
+      <p>Huffman Coding adalah algoritma kompresi data lossless yang sangat efisien, dirancang oleh David Huffman pada tahun 1952. Prinsip utamanya adalah menetapkan kode biner dengan panjang variabel untuk setiap karakter dalam data, di mana karakter yang lebih sering muncul akan mendapatkan kode yang lebih pendek, sementara karakter yang jarang muncul mendapatkan kode yang lebih panjang. Ini dilakukan dengan membangun pohon biner khusus (disebut Huffman Tree) berdasarkan frekuensi kemunculan setiap karakter. 
+</p>
     </div>
   </div>
 
@@ -104,7 +105,8 @@
     <img src="n_queens.png" alt="N-Queens Problem">
     <div class="card-content">
       <h2>N-QUEENS PROBLEM</h2>
-      <p>Menempatkan N buah ratu pada papan catur berukuran N×N sehingga tidak saling menyerang satu sama lain secara horizontal, vertikal, maupun diagonal.</p>
+      <p>N-Queens Problem adalah sebuah teka-teki klasik dalam dunia komputasi di mana kita harus menempatkan N ratu catur di papan berukuran N×N sedemikian rupa sehingga tidak ada satu pun ratu yang saling menyerang—artinya, tidak ada dua ratu yang berbagi baris, kolom, atau diagonal yang sama. Umumnya, masalah ini diselesaikan menggunakan pendekatan backtracking, sebuah metode rekursif yang secara sistematis mencoba setiap kemungkinan posisi untuk ratu, dan jika penempatan ratu di suatu posisi tidak aman, algoritma akan "mundur" untuk mencoba alternatif lain hingga semua ratu berhasil ditempatkan atau semua kombinasi telah dieksplorasi. 
+</p>
     </div>
   </div>
 
@@ -112,7 +114,8 @@
     <img src="subset_sum.png" alt="Subset Sum Problem">
     <div class="card-content">
       <h2>SUBSET SUM PROBLEM</h2>
-      <p>Menentukan apakah terdapat subset dari kumpulan angka yang jumlah totalnya sama dengan nilai target. Umumnya diselesaikan dengan teknik backtracking atau DP.</p>
+      <p>Subset Sum Problem adalah masalah klasik dalam ilmu komputer yang menanyakan apakah ada subset dari sekumpulan bilangan bulat yang diberikan yang jumlahnya (sum) sama dengan nilai target tertentu. Ini adalah contoh masalah keputusan NP-lengkap, yang berarti tidak ada algoritma waktu polinomial yang diketahui untuk menyelesaikannya secara umum. Meskipun demikian, untuk input dengan ukuran tertentu, masalah ini dapat dipecahkan secara efisien menggunakan pendekatan dynamic programming. Solusi dynamic programming biasanya membangun tabel kebenaran untuk menentukan apakah setiap kemungkinan jumlah hingga target dapat dibentuk menggunakan elemen-elemen dari himpunan, mempertimbangkan setiap elemen satu per satu. 
+</p>
     </div>
   </div>
 
@@ -120,7 +123,8 @@
     <img src="rat_in_maze.png" alt="Rat in a Maze">
     <div class="card-content">
       <h2>RAT IN A MAZE</h2>
-      <p>Mencari semua kemungkinan jalur dari titik awal ke tujuan di dalam labirin. Diselesaikan menggunakan backtracking untuk mengeksplorasi semua rute yang mungkin.</p>
+      <p>Rat in a Maze adalah masalah algoritmik klasik di mana seekor tikus ditempatkan di sel awal (biasanya kiri atas) dari sebuah labirin berbentuk grid 2D dan harus menemukan jalur ke sel tujuan (biasanya kanan bawah). Labirin terdiri dari sel-sel yang dapat dilalui (ditandai dengan '1') dan sel-sel yang diblokir atau dinding (ditandai dengan '0'). Tikus dapat bergerak ke atas, bawah, kiri, atau kanan (tergantung variasi masalahnya). Masalah ini adalah contoh sempurna untuk mengilustrasikan algoritma backtracking. Solusi backtracking secara rekursif menjelajahi semua kemungkinan jalur dari titik awal, menandai sel yang dikunjungi untuk menghindari perulangan, dan jika jalur menemui jalan buntu, algoritma akan "mundur" ke sel sebelumnya untuk mencoba arah yang berbeda hingga menemukan jalur ke tujuan atau menentukan bahwa tidak ada jalur yang memungkinkan. 
+</p>
     </div>
   </div>
 
@@ -128,7 +132,8 @@
     <img src="bfs.png" alt="Breadth First Search">
     <div class="card-content">
       <h2>BREADTH-FIRST SEARCH (BFS)</h2>
-      <p>Algoritma pencarian pada graf yang mengunjungi simpul tingkat demi tingkat, cocok untuk mencari jalur terpendek di graf tak berbobot.</p>
+      <p>Breadth-First Search (BFS) adalah algoritma penelusuran atau penjelajahan graf yang secara sistematis menjelajahi semua simpul dalam graf secara level demi level atau lapisan demi lapisan. Dimulai dari simpul awal, BFS pertama-tama mengunjungi semua tetangga langsung dari simpul tersebut, kemudian mengunjungi semua tetangga dari tetangga tersebut, dan seterusnya. BFS menggunakan antrean (queue) untuk menyimpan simpul-simpul yang akan dikunjungi, memastikan bahwa simpul-simpul yang "lebih dekat" ke simpul awal akan dikunjungi terlebih dahulu. Algoritma ini sering digunakan untuk menemukan jalur terpendek dalam graf yang tidak berbobot (unweighted graph), mengidentifikasi komponen terhubung, dan dalam berbagai aplikasi lain seperti web crawling dan sistem rekomendasi. 
+</p>
     </div>
   </div>
 
@@ -136,7 +141,8 @@
     <img src="dfs.png" alt="Depth First Search">
     <div class="card-content">
       <h2>DEPTH-FIRST SEARCH (DFS)</h2>
-      <p>Algoritma penelusuran yang menyusuri simpul graf sedalam mungkin sebelum kembali dan mencoba jalur alternatif. Cocok untuk deteksi siklus dan komponen terhubung.</p>
+      <p>Depth-First Search (DFS) adalah algoritma penelusuran graf atau pohon yang bekerja dengan menjelajahi sejauh mungkin setiap "cabang" sebelum melakukan backtracking. Dimulai dari simpul awal, DFS akan bergerak "dalam" ke salah satu tetangga, lalu ke tetangga dari tetangga tersebut, dan seterusnya, sampai mencapai simpul yang tidak memiliki tetangga yang belum dikunjungi. Pada titik ini, algoritma akan "mundur" (backtrack) ke simpul sebelumnya untuk mencoba jalur atau cabang lain yang belum dijelajahi. DFS secara alami dapat diimplementasikan secara rekursif atau menggunakan struktur data tumpukan (stack) untuk melacak simpul-simpul yang perlu dikunjungi. Algoritma ini sering digunakan untuk mendeteksi siklus dalam graf, menemukan komponen terhubung, dan dalam masalah pencarian jalur seperti menyelesaikan labirin 
+.</p>
     </div>
   </div>
 
@@ -144,7 +150,7 @@
     <img src="kahns_algorithm.png" alt="Kahn's Algorithm">
     <div class="card-content">
       <h2>KAHN’S ALGORITHM</h2>
-      <p>Digunakan untuk melakukan topological sorting pada graf berarah. Algoritma ini menggunakan antrean untuk memproses simpul-simpul dengan in-degree nol secara iteratif.</p>
+      <p>Kahn's Algorithm adalah sebuah algoritma yang digunakan untuk melakukan topological sorting pada sebuah Directed Acyclic Graph (DAG), yaitu mengurutkan simpul-simpul graf secara linear sehingga untuk setiap panah langsung dari simpul u ke simpul v, simpul u selalu muncul sebelum simpul v dalam urutan. Algoritma ini bekerja dengan pendekatan berbasis in-degree, di mana ia pertama-tama menghitung jumlah in-degree (jumlah panah yang masuk) untuk setiap simpul. Kemudian, semua simpul yang memiliki in-degree 0 (tidak ada ketergantungan) dimasukkan ke dalam antrean. Secara iteratif, algoritma akan mengeluarkan simpul dari antrean, menambahkannya ke daftar hasil urutan topologi, dan mengurangi in-degree dari semua tetangga simpul yang baru saja dikeluarkan. Jika in-degree dari tetangga mana pun menjadi 0, tetangga tersebut akan ditambahkan ke antrean. Proses ini berlanjut hingga antrean kosong; jika semua simpul berhasil ditambahkan ke urutan, maka graf tersebut adalah DAG dan urutan topologinya telah ditemukan. Jika ada simpul yang tersisa dan antrean kosong, itu berarti graf memiliki siklus.</p>
     </div>
   </div>
 
@@ -152,7 +158,8 @@
     <img src="dijkstra.png" alt="Dijkstra's Algorithm">
     <div class="card-content">
       <h2>DIJKSTRA’S ALGORITHM</h2>
-      <p>Mencari jarak terpendek dari satu titik ke titik lainnya dalam graf berbobot non-negatif. Memanfaatkan struktur data heap atau priority queue untuk efisiensi.</p>
+      <p>Dijkstra's Algorithm adalah algoritma greedy yang digunakan untuk menemukan jalur terpendek dari satu simpul sumber ke semua simpul lainnya dalam sebuah graf berbobot, dengan syarat semua bobot sisi (edge weights) adalah non-negatif. Algoritma ini bekerja dengan membangun "pohon jalur terpendek" dari simpul sumber, secara bertahap memperluasnya ke simpul-simpul yang belum dikunjungi. Pada setiap langkah, ia memilih simpul yang belum dikunjungi dengan jarak terpendek dari simpul sumber yang diketahui sejauh ini, lalu memperbarui jarak ke tetangga-tetangganya jika ditemukan jalur yang lebih pendek melalui simpul yang baru dipilih. Untuk efisiensi, algoritma ini umumnya menggunakan priority queue (antrean prioritas) untuk menyimpan simpul-simpul yang akan diproses, memastikan bahwa simpul dengan jarak terpendek selalu diambil lebih dulu. 
+</p>
     </div>
   </div>
 
